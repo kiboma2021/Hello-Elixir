@@ -4,8 +4,8 @@ defmodule HelloWeb.HelloController do
     render(conn, "index.html")
   end
 
-  def show(conn, %{"user" => user}) do
-    render(conn, "show.html", user: user)
+  def show(conn, %{"messenger" => messenger}) do
+    render(conn, "show.html", messenger: messenger)
   end
 
 end
